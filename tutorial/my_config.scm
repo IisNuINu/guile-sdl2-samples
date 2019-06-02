@@ -1,0 +1,6 @@
+(eval-when (load compile)
+    (define base-path (string-append (getenv "HOME") "/work/guile/sdl2/"))
+    (define lib-path (string-append base-path "my_addon/"))
+)
+(define work-path (string-append base-path "tutorial/"))
+(add-to-load-path lib-path)
